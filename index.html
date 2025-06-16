@@ -1,115 +1,123 @@
+
 <!DOCTYPE html>
-<html lang="bn">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>মেহেদি হাসান</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ujjol Khan</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
     body {
-      font-family: 'Siyam Rupali', sans-serif;
+      font-family: 'Poppins', sans-serif;
       margin: 0;
       padding: 0;
-      background: linear-gradient(to right, #fbc2eb, #a6c1ee);
-      color: #222;
-    }
-
-    header {
-      background-color: #6a11cb;
-      background-image: linear-gradient(315deg, #6a11cb 0%, #2575fc 74%);
-      color: white;
-      padding: 40px 10px;
-      text-align: center;
-      font-size: 40px;
-      font-weight: bold;
-      text-shadow: 2px 2px 6px #000;
-    }
-
-    .container {
-      max-width: 700px;
-      margin: auto;
-      padding: 20px;
-      text-align: center;
-    }
-
-    .profile-pic {
-      width: 160px;
-      height: 160px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 5px solid white;
-      box-shadow: 0 0 10px rgba(0,0,0,0.3);
-      margin-bottom: 20px;
-    }
-
-    .info {
-      background-color: #ffffffcc;
-      padding: 20px;
-      border-radius: 10px;
-      box-shadow: 0 5px 10px rgba(0,0,0,0.1);
-      margin-bottom: 30px;
-    }
-
-    .info p {
-      font-size: 18px;
-      margin: 10px 0;
-    }
-
-    h2 {
+      background: #f0f4f8;
       color: #333;
-      margin-bottom: 15px;
     }
-
-    .captions h3 {
-      margin-bottom: 15px;
-      color: #4b0082;
+    header {
+      background: #1f2937;
+      color: white;
+      text-align: center;
+      padding: 2rem 1rem;
     }
-
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+    .info {
+      text-align: center;
+      margin: 1rem 0;
+    }
+    .info p {
+      margin: 0.3rem;
+    }
+    .photo {
+      text-align: center;
+      margin: 1rem;
+    }
+    .photo img {
+      width: 200px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .tabs {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .tab-button {
+      padding: 10px 20px;
+      border: none;
+      background: #3b82f6;
+      color: white;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+    .tab-button:hover {
+      background: #2563eb;
+    }
+    .tab-content {
+      display: none;
+      max-width: 600px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .tab-content.active {
+      display: block;
+    }
     .caption {
-      background-color: #fff;
-      margin: 10px auto;
-      padding: 15px;
-      border-left: 5px solid #6a11cb;
-      font-style: italic;
-      border-radius: 6px;
-      width: 90%;
-      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin-bottom: 1rem;
     }
-
-    @media (max-width: 600px) {
-      header {
-        font-size: 30px;
-        padding: 30px 5px;
-      }
+    .caption::after {
+      content: " — Mehedi Hasan";
+      font-style: italic;
+      display: block;
+      margin-top: 0.3rem;
     }
   </style>
 </head>
 <body>
-
-  <header>উজ্জ্বল খান</header>
-
-  <div class="container">
-    <img src="mehedi.jpg" alt="Mehedi Hasan" class="profile-pic">
-
-    <div class="info">
-      <h2>মেহেদি হাসান</h2>
-      <p><strong>ফোন:</strong> ০১৭৪১৮৭৬৮৮৮</p>
-      <p><strong>ঠিকানা:</strong> ঝিকরা পাড়া</p>
-      <p><strong>বয়স:</strong> ১৭ বছর</p>
-    </div>
-
-    <div class="captions">
-      <h3>🔥 প্রেরণাদায়ক বাংলা ক্যাপশন 🔥</h3>
-
-      <div class="caption">“স্বপ্ন দেখতে ভয় নেই, ভয় পেতে হয় স্বপ্ন পূরণের পথে।”</div>
-      <div class="caption">“আজকের কষ্টই আগামীকালের সফলতা।”</div>
-      <div class="caption">“হার মানলে সব শেষ, চেষ্টা চালিয়ে গেলে জিত অবধারিত।”</div>
-      <div class="caption">“নিজেকে বিশ্বাস করো, কারণ তোমার মতো আর কেউ নেই।”</div>
-      <div class="caption">“শান্ত মনেই সবচেয়ে বড় শক্তি লুকিয়ে থাকে।”</div>
-      <div class="caption">“সফলতার কোনো শর্টকাট নেই, আছে কেবল পরিশ্রম।”</div>
-      <div class="caption">“যেখানে ইচ্ছা, সেখানে উপায়।”</div>
-      <div class="caption">“যদি কখনো থেমে যেতে চাও, মনে রেখো কেন শুরু করেছিলে।”</div>
-    </div>
+  <header>
+    <h1>Ujjol Khan</h1>
+  </header>
+  <div class="info">
+    <p><strong>Name:</strong> Mehedi Hasan</p>
+    <p><strong>Phone:</strong> 01741876888</p>
+    <p><strong>Address:</strong> Jhikra Para</p>
+    <p><strong>Age:</strong> 17 years</p>
   </div>
-
+  <div class="photo">
+    <img src="mehedi.jpg" alt="Mehedi Hasan's photo" />
+  </div>
+  <div class="tabs">
+    <button class="tab-button" onclick="showTab('sad')">Sad</button>
+    <button class="tab-button" onclick="showTab('funny')">Funny</button>
+    <button class="tab-button" onclick="showTab('upodesh')">Upodesh</button>
+  </div>
+  <div id="sad" class="tab-content">
+    <div class="caption">Mon kharap hole sob kichu nisproyo mone hoy</div>
+    <div class="caption">Jake niye shopno dekhi shei sobcheye onno hoy</div>
+  </div>
+  <div id="funny" class="tab-content">
+    <div class="caption">Porikkhay pass korte chaile kono notun boyi pora jabe na!</div>
+    <div class="caption">Amar matha thik ache, sudhu porashonay allergy!</div>
+  </div>
+  <div id="upodesh" class="tab-content">
+    <div class="caption">Shopno dekhun, kintu shopner jonno ghumaben na</div>
+    <div class="caption">Jibon e shanti pete hole chawa komate hoy</div>
+  </div>
+  <script>
+    function showTab(id) {
+      const tabs = document.querySelectorAll('.tab-content');
+      tabs.forEach(tab => tab.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+    }
+  </script>
 </body>
 </html>
